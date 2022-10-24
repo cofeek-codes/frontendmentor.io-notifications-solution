@@ -22,4 +22,9 @@ asRead.addEventListener('click', () => {
 			c.classList.remove('unread')
 		}
 	})
+	unreadDots.forEach(d => {
+		if (d.classList.contains('active')) {
+			d.classList.remove('active')
+		}
+	})
 })
