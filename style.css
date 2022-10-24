@@ -2,7 +2,8 @@
 
 :root {
     --mobile: 375px;
-    --descktop: 1440px --red: hsl(1, 90%, 64%);
+    --descktop: 1440px;
+    --red: hsl(1, 90%, 64%);
     --blue: hsl(219, 85%, 26%);
     --white: hsl(0, 0%, 100%);
     --vlb: hsl(210, 60%, 98%);
@@ -44,6 +45,7 @@ body {
 
 .wrapper {
     max-width: var(--descktop);
+    margin: 0 auto;
     padding: 20px;
 }
 
