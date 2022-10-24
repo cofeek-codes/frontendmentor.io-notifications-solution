@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root {
+    --mobile: 375px;
+    --descktop: 1440px --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --vlb: hsl(210, 60%, 98%);
+    --lb: hsl(211, 68%, 94%);
+}
+
+/*
+- White: hsl(0, 0%, 100%) - Very light grayish blue: hsl(210, 60%, 98%) - Light grayish blue 1: hsl(211, 68%, 94%) - Light grayish blue 2: hsl(205, 33%, 90%) - Grayish blue: hsl(219, 14%, 63%) - Dark grayish blue: hsl(219, 12%, 42%) - Very dark blue: hsl(2  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+p {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+
+}
+
+.wrapper {
+    max-width: var(--descktop);
+    padding: 20px;
+}
+
+@media (max-width: var(--mobile)) {
+
+    .wrapper {
+        max-width: var(--mobile);
+    }
+}
+
+.main__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.main__title {
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.main__title span {
+    background: var(--blue);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 21px;
+    margin-left: 15px;
+}
+
+.as__read__button {
+    transition: .3s ease all;
+    color: hsl(219, 14%, 63%);
+}
+
+.as__read__button:hover {
+    color: var(--blue);
+}
+
+.notitfication__card {
+    margin-bottom: 35px;
+}
+
+.unread {
+    background: var(--lb);
+
+}
+
+.notification__main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.notification__avatar {
+    margin-right: 21px;
+}
+
+
+.username {
+    font-weight: 800;
+}
+
+.send__ago {
+    color: hsl(219, 14%, 63%);
+    margin-top: 8px;
+}
+
+.red__dot {
+    display: inline-flex;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: red;
+    margin-left: 5px;
+
+}
+
+.notification__content {
+    width: 100%;
+
+}
+
+.private__message {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+}
+
+.picture__ref {
+    display: flex;
+    justify-content: flex-end;
+}
