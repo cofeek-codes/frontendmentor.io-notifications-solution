@@ -115,13 +115,17 @@ body {
 }
 
 .red__dot {
-    display: inline-flex;
+    display: none;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     background: red;
     margin-left: 5px;
 
+}
+
+.active {
+    display: inline-flex;
 }
 
 .notification__content {
